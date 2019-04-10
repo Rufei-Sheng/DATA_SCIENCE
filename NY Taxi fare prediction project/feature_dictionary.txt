@@ -1,0 +1,23 @@
+Original Feature:
+  key: an unique identifier of each trip, datetime
+  fare_amount: fare of that taxi trip, float
+  pickup_datetime: pick up date and time, datetime
+  pickup_latitude: ANS, float
+  pickup_longitude: ANS, float
+  dropoff_latitude: ANS, float
+  dropoff_longitude: ANS, float
+  passenger_count: number of passengers in each trip, int
+-----------------------------------------------------------------------------
+Modified Features:
+fare_amount: fare of that taxi trip, float
+
+passenger_count: number of passengers in each trip, int
+weekday: indicated on which day the trip happens, int (0-6)
+weekend: whether or not the trip happens on weekend, binary
+day_night: whether or not the trip happens on day/night, binary
+# day is defined as 6AM - 6PM and night is defined as 6:01PM to 5:59AM
+distance: distance of the trip, float
+neighborhood: pair of pick-up neighborhood and drop-off neighborhood
+datekey: pick up date and hour, shown as year-month-day-hour
+tripPerHour: the total amount of trip in that datekey
+holiday: whether holiday day, not holiday:0/holiday: 1
